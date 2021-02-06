@@ -22,24 +22,29 @@
     <div class="library">
       <h1>MY LIBRARY</h1>
       <div class="book-container">
-        <div class="book">Book1</div>
-        <div class="book">Book2</div>
-        <div class="book">Book3</div>
-        <div class="book">Book4</div>
-        <div class="book">Book5</div>
-        <div class="book">Book6</div>
-        <div class="book">Book7</div>
+        <div class="book">
+          <p class="title">title here</p>
+          <p class="author">maile lekheko</p>
+          <p class="pages">000</p>
+          <button class="hasRead">Read</button>
+          <button class="remove">Remove</button>
+        </div>
       </div>
     </div>
       <div class="overlay"></div>
-        <div class="form">
+        <form class="form">
           <i class="fas fa-2x fa-times"></i>
           <h3 class="popup-title">Add New Book</h3>
           <input class="popup-input" type="text" id="title" placeholder="Title" required>
           <input class="popup-input" type="text" id="author" placeholder="Author" required>
           <input class="popup-input" type="number" min=1 id="pages" placeholder="Total Pages" required>
-          <button class="popup-input" type="submit" id="popup-button">Add</button>
-        </div>
+          <div class="read">
+            <label for="hasRead">Read?</label>
+            <input type="checkbox" id="hasRead" checked=true>
+          </div>
+
+          <button class="popup-input" id="popup-button">Add</button>
+        </form>
   </div>
   <script src="app.js"></script>
 </body>

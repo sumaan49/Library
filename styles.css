@@ -49,11 +49,12 @@ i.fa-plus{
 .addBook {
   text-align: center;
   margin-top: 30px;
-  width: 200px;
+  width: 90%;
   height: 50px;
   font-size: 25px;
   border-radius: 10px;
   outline: none;
+  cursor: pointer;
 }
 
 .library {
@@ -79,17 +80,42 @@ h1{
   margin: 20px;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  justify-items: flex-start;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  gap: 20px;
 }
 
 .book {
-  width: 135px;
+  width: 150px;
   height: 200px;
   border: 1px red solid;
-  margin: 10px;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: capitalize;
 }
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.author {
+  font-size: 18px;
+}
+.hasRead{
+  width: 60px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.remove {
+  width: 60px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 
 .form {
   border: 2px solid rgb(221, 221, 221);
@@ -121,11 +147,11 @@ i.fa-times {
   border: 1px solid gray;
   text-transform: uppercase;
   outline: none;
+  cursor: pointer;
 }
 
 #popup-button:hover {
-  transform: scale(1.01);
-  font-size: 23px;
+  transform: scale(1.05);
 }
 
 .overlay {
@@ -140,19 +166,34 @@ i.fa-times {
 }
 h3{
   color: rgb(20, 49, 92);
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
-  font-weight: 500;
   padding-left: 50px;
 
 }
 
 .popup-input {
-  width: 90%;
+  width: 80%;
   height: 10%;
-  padding: 10px;
-  margin-top: 40px;
+  padding: 5px;
+  margin-top: 30px;
   border-radius: 20px;
   outline: none;
+  font-size: 15px;
+}
+
+.read{
+  display: flex;
+  flex-direction: row;
   font-size: 20px;
+  margin-top: 15px;
+
+}
+#hasRead {
+  padding-left: 20px;
+  margin: 8px 0 0 30px;
+  font-size: 210%;
+}
+input[type=checkbox] {
+  transform: scale(1.5);
 }
