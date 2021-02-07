@@ -21,7 +21,7 @@ body{
 
 .sidebar {
   width: 25%;
-  height: 60vh;
+  height: 65vh;
   text-align: center;
   margin: 110px 0 0 20px;
   border-radius: 20px;
@@ -56,10 +56,11 @@ i.fa-plus{
 
 .addBook {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   width: 70%;
   height: 50px;
-  font-size: 25px;
+  font-size: 1.5em;
+  font-weight: bold;
   border-radius: 10px;
   background-color: rgba(179, 178, 248, 0.603);
   outline: none;
