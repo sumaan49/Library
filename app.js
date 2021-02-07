@@ -89,9 +89,9 @@ function displayBooks(book) {
   readStatus.textContent = book.hasRead === true ? 'Read' : 'Not Read';
   readStatus.classList.add('hasRead');
   if (readStatus.textContent === 'Read') {
-    readStatus.style.backgroundColor = 'green';
+    readStatus.style.backgroundColor = 'rgb(23, 134, 41)';
   } else {
-    readStatus.style.backgroundColor = 'red';
+    readStatus.style.backgroundColor = 'rgb(223, 47, 23)';
   }
 
   remove.textContent = 'Delete';
@@ -112,10 +112,10 @@ function displayBooks(book) {
 function toggleStatus(e) {
   if(e.target.textContent === 'Read') {
     e.target.textContent = 'Not Read';
-    e.target.style.backgroundColor = 'red';
+    e.target.style.backgroundColor = 'rgb(223, 47, 23)';
   } else {
     e.target.textContent = 'Read';
-    e.target.style.backgroundColor = 'green';
+    e.target.style.backgroundColor = 'rgb(23, 134, 41)';
   }
   updateStats();
 }
